@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regressão Linear em JS</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Regressão Linear e Cálculo de R²</h1>
+  
+  <!-- Input para carregar o arquivo CSV -->
+  <input type="file" id="csvFile" accept=".csv" />
+  <button onclick="processCSV()">Carregar e Processar CSV</button>
+  
+  <!-- Botão para salvar os resultados -->
+  <button onclick="salvarResultados()">Salvar Resultados</button>
+  
+  <!-- Tabela para exibir os resultados -->
+  <table id="resultsTable" border="1">
+    <thead>
+      <tr>
+        <th>Amostra</th>
+        <th>Inclinação (m)</th>
+        <th>Intercepto (b)</th>
+        <th>R²</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <!-- Saída dos resultados em texto -->
+  <pre id="output"></pre>
+</body>
+</html>
